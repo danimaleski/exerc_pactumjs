@@ -1,0 +1,35 @@
+{
+  "name": "exercicio_pactum",
+  "version": "1.0.0",
+  "description": "Exercício módulo 24 sobre testes de API com Pactum e GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.test.js",
+    "test:gql": "mocha ./test/graphql/**/*.test.js",
+    "test:rest": "mocha ./test/api/**/*.test.js",
+    "test:exer": "mocha .text/exercicios/**/*.test.js",
+    "test:contractProvider": "mocha ./test/contract/loginProvider.test.js",
+    "test:contractConsumer": "mocha ./test/contract/loginConsumer.test.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danimaleski/graphql_pactumJS.git"
+  },
+  "keywords": [],
+  "author": "daniella",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/danimaleski/graphql_pactumJS/issues"
+  },
+  "homepage": "https://github.com/danimaleski/graphql_pactumJS#readme",
+  "devDependencies": {
+    "mocha": "^11.1.0",
+    "pactum": "^3.7.6"
+  },
+  "dependencies": {
+    "pactum-flow-plugin": "^0.1.4",
+    "pactum-matchers": "^1.1.7"
+  }
+}
