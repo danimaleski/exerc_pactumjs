@@ -29,6 +29,7 @@ jobs:
 
       - name: Merge Mochawesome reports and generate index.html
         run: npm run test:report
+        continue-on-error: true
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
