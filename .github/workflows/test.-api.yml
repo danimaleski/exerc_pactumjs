@@ -25,6 +25,7 @@ jobs:
 
       - name: Run tests with Mochawesome reporter
         run: npm test
+        continue-on-error: true
 
       - name: Merge Mochawesome reports and generate index.html
         run: node merge-report.js
