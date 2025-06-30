@@ -8,7 +8,7 @@ const fs = require('fs');
     fs.writeFileSync('mochawesome-report/report.json', JSON.stringify(json, null, 2));
     await marge.create(json, {
       reportDir: 'mochawesome-report',
-      reportFilename: 'index',
+      reportFilename: 'index.html',
     });
     console.log('✅ Relatório gerado com sucesso!');
   } catch (err) {
