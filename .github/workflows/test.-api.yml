@@ -31,6 +31,9 @@ jobs:
         run: npm run test:report
         continue-on-error: true
 
+      - name: Rename mochawesome.html to index.html
+        run: cp mochawesome-report/mochawesome.html mochawesome-report/index.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

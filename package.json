@@ -6,7 +6,7 @@
   "scripts": {
     "clean:report": "rimraf mochawesome-report",
     "test": "mocha ./test/**/*.test.js --reporter mochawesome",
-    "test:report": "npm test && copy mochawesome-report\\mochawesome.html mochawesome-report\\index.html",
+    "test:report": "npm test && cp mochawesome-report\\mochawesome.html mochawesome-report\\index.html",
     "test:gql": "mocha ./test/graphql/**/*.test.js",
     "test:rest": "mocha ./test/api/**/*.test.js",
     "test:exer": "mocha .text/exercicios/**/*.test.js",
